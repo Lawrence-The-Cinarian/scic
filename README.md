@@ -1,0 +1,2 @@
+# scic
+A Scientific Calculator 

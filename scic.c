@@ -4,7 +4,7 @@
 
 int main() {
 
-        char opt[5] = {'a', 'b', 'c', 'A', 'B', 'C'};
+        char opt[6] = {'a', 'b', 'c', 'A', 'B', 'C'};
         float a, b, c, A, B, C;
         int operand, option;
         double answer, question;

@@ -4,17 +4,15 @@
 
 int main() {
 
-        char opt[6] = {'a', 'b', 'c', 'A', 'B', 'C'};
-        int operand;
-        int option;
-        double answer;
-        double question;
+        char opt[5] = {'a', 'b', 'c', 'A', 'B', 'C'};
         float a, b, c, A, B, C;
+        int operand, option;
+        double answer, question;
               for (;;) {
                   puts("Cinari's Scientific Calculator");
                   puts("Instructions: Enter any of your preferred options");
-                  puts("(1) Enter 1 for the trigonometric Calculations");
-                  puts("(2) Enter 2 for Right Angled Calculations");
+                  puts("(1) Enter 1 for the Trigonometric Calculations");
+                  puts("(2) Enter 2 for the Angle Calculations");
                   printf("Enter your Choice>> ");
                   scanf("%d", &operand);
 

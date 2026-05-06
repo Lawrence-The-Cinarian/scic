@@ -40,12 +40,9 @@ int main() {
               printf("Enter the Number>> ");
               scanf("%lf", &question);
               puts("");
-
+              if(option == 0 || question == 0) return 0;
                   switch(option) {
-                  
-                  case 0:
-                  return 0;
-                  
+          
                   case 1:
                   answer = disin(question);
                   break;

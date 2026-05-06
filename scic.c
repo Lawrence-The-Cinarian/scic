@@ -15,11 +15,15 @@ int main() {
         puts("Instructions: Enter any of your preferred options");
         puts("(1) Enter 1 for the Trigonometric Calculations");
         puts("(2) Enter 2 for the Angle Calculations");
+        puts("(0) Enter for Exit");
         printf("Enter your Choice>> ");
         scanf("%d", &operand);
         puts("");
-
-              if(operand == 1) {
+              if(operand == 0) {
+              return 0;
+              }
+              
+              else if(operand == 1) {
               puts("Trigonometric Calculator");
               puts("");
               puts("(1) Sine");
@@ -76,11 +80,16 @@ int main() {
                       puts(" (1) Find side b, when Angle A, Angle B, Angle C and side a and c are given");
                       puts(" (2) Find side a, when Angle A, Angle B  Angle C and side b and c are given");
                       puts(" (3) Find side c, when Angle A, Angle B  Angle C and side a and b are given");
+                      puts(" (0) Enter for Exit");
                       printf("Enter choice>> ");
                       scanf("%d", &option);
                       puts("");
 
                           switch(option) {
+                          case 0:
+                          return 0;
+                          break;
+                          
                           case 1:
                           printf("Enter Angle B>> ");
                           scanf("%lf", &B);
@@ -120,7 +129,6 @@ int main() {
                                 }
                                 else {
                                 break;
-                                return option;
                                 }
                                 answer = sine_to_find_side(a, A, B);  /* a serves as variable for side a and side c; A = it also serves as variable for Angle A and Angle C; Angle B is need to find side c so its seen as b constant*/
                                  printf("Answer of side b >> %.3f\n", answer);
@@ -166,7 +174,6 @@ int main() {
                                 }
                                 else {
                                 break;
-                                return option;
                                 }
                                 answer = sine_to_find_side(b, B, A); /*b serves as side b and side c; B also serves as Angle B and Angle C; Angle A is need to find side a so its seen as a constant*/
                                 printf("Answer of side a >> %.3f\n", answer);
@@ -212,7 +219,6 @@ int main() {
 
                                 else {
                                 break;
-                                return option;
                                 }
                                 answer = sine_to_find_side(a, A, C); /*a serves as side a and side b; A also serves as Angle A and Angle B; Angle C is need to find side c so its seen as a constant*/
                                 printf("Answer of side c >> %.3f\n", answer);

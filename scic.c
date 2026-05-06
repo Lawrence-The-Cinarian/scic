@@ -7,7 +7,6 @@ int main() {
   char opt[6] = {'a', 'b', 'c', 'A', 'B', 'C'};
   double a, b, c, A, B, C;
   double answer, question;
-  int length = sizeof(opt) / sizeof(opt[6]);
   int operand, option;
 
     for (;;) {

@@ -72,7 +72,7 @@ int main() {
                             puts(" (3) Find side c, when Angle A, Angle B  Angle C and side a and b are given");
                             printf("Enter choice>> ");
                             scanf("%d", &option);
-                            
+
                                               switch(option) {
                                               case 1:
                                               printf("Enter Angle B>> ");
@@ -82,25 +82,26 @@ int main() {
                                               puts("You are to make the Angles match well with the sides for Better Computation and Answer");
                                               puts("e.g; if Angle A given to you type A, if Angle C is given type C");
                                               printf("Enter>> ");
-                                              scanf("%c", opt);
-                                              
-                                              if(*opt == 'A') {
+                                              scanf(" %c", opt);
+
+                                              if(opt[0] == 'A') {
                                               printf("Enter Angle A>> ");
                                               scanf("%f", &A);
+
                                               }
-                                              else if(opt[5] == 'C') {
+                                              else if(opt[0] == 'C') {
                                               printf("Enter Angle C>> ");
                                               scanf("%f", &C);
                                               }
                                               puts("Enter The side you wish to if they are available to you");
                                               puts("e.g; if side a given to you type a, if side c is given type c");
                                               printf("Enter>> ");
-                                              scanf("%c", opt);
+                                              scanf(" %c", opt);
                                                     if(opt[0] == 'a') {
                                                     printf("Enter side a>> ");
                                                     scanf("%f", &a);
                                                     }
-                                                    else if(opt [2] == 'c') {
+                                                    else if(opt [0] == 'c') {
                                                     printf("Enter side c>> ");
                                                     scanf("%f", &c);
                                                     }
@@ -110,7 +111,7 @@ int main() {
                                                     }
                                                     answer = sine_to_find_side(a, A, B);
                                                     break;
-                                                    
+
                                               case 2:
                                               printf("Enter Angle A>> ");
                                               scanf("%f", &A);
@@ -119,24 +120,24 @@ int main() {
                                               puts("You are to make the Angles match well with the sides for Better Computation and Answer");
                                               puts("e.g; if Angle B given to you type B, if Angle C is given type C");
                                               printf("Enter>> ");
-                                              scanf("%c", opt);
-                                              if(opt[4] == 'B') {
+                                              scanf(" %c", opt);
+                                              if(opt[0] == 'B') {
                                               printf("Enter Angle A>> ");
                                               scanf("%f", &B);
                                               }
-                                              else if(opt[5] == 'C') {
+                                              else if(opt[0] == 'C') {
                                               printf("Enter Angle C>> ");
                                               scanf("%f", &C);
                                               }
                                               puts("Enter The side you wish to if they are available to you");
                                               puts("e.g; if side b given to you type b, if side c is given type c");
                                               printf("Enter>> ");
-                                              scanf("%c", opt);
-                                                    if(opt[1] == 'b') {
+                                              scanf(" %c", opt);
+                                                    if(opt[0] == 'b') {
                                                     printf("Enter side a>> ");
                                                     scanf("%f", &a);
                                                     }
-                                                    else if(opt [2] == 'c') {
+                                                    else if(opt [0] == 'c') {
                                                     printf("Enter side c>> ");
                                                     scanf("%f", &c);
                                                     }
@@ -146,7 +147,7 @@ int main() {
                                                     }
                                                     answer = sine_to_find_side(a, A, B);
                                                     break;
-                                                  
+
                                                   case 3:
                                                   printf("Enter Angle C>> ");
                                                   scanf("%f", &C);
@@ -155,24 +156,24 @@ int main() {
                                                   puts("You are to make the Angles match well with the sides for Better Computation and Answer");
                                                   puts("e.g; if Angle A given to you type A, if Angle B is given type B");
                                                   printf("Enter>> ");
-                                                  scanf("%c", opt);
-                                                  if(opt[3] == 'A') {
+                                                  scanf(" %c", opt);
+                                                  if(opt[0] == 'A') {
                                                   printf("Enter Angle A>> ");
                                                   scanf("%f", &A);
                                                   }
-                                                  else if(opt[4] == 'B') {
+                                                  else if(opt[0] == 'B') {
                                                   printf("Enter Angle C>> ");
                                                   scanf("%f", &B);
                                                   }
                                                   puts("Enter The side you wish to if they are available to you");
                                                   puts("e.g; if side a given to you type a, if side b is given type b");
                                                   printf("Enter>> ");
-                                                  scanf("%c", opt);
+                                                  scanf(" %c", opt);
                                                         if(opt[0] == 'a') {
                                                         printf("Enter side a>> ");
                                                         scanf("%f", &a);
                                                         }
-                                                        else if(opt [1] == 'b') {
+                                                        else if(opt [0] == 'b') {
                                                         printf("Enter side c>> ");
                                                         scanf("%f", &c);
                                                         }
@@ -186,11 +187,11 @@ int main() {
                                               for(int i = 0; i < 1; i++) {
                                               printf("Answer of side %c >> %.3f\n", opt[i], answer);
                                         }
-                                               
+
                              }
 
                             else puts("Invalid Input");
             }
-            
+
 return 0;
 }

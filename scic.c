@@ -32,6 +32,7 @@ int main() {
               puts("(4) Sine Inverse");
               puts("(5) Cosine Inverse");
               puts("(6) Tangent Inverse");
+              puts("(0) Enter 0 to Exit")
               puts("");
               printf("Enter your Choice>> ");
               scanf("%d", &option);
@@ -41,6 +42,10 @@ int main() {
               puts("");
 
                   switch(option) {
+                  
+                  case 0:
+                  return 0;
+                  
                   case 1:
                   answer = disin(question);
                   break;
@@ -88,7 +93,6 @@ int main() {
                           switch(option) {
                           case 0:
                           return 0;
-                          break;
                           
                           case 1:
                           printf("Enter Angle B>> ");

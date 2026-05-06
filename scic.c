@@ -32,7 +32,7 @@ int main() {
               puts("(4) Sine Inverse");
               puts("(5) Cosine Inverse");
               puts("(6) Tangent Inverse");
-              puts("(0) Enter 0 to Exit")
+              puts("(0) Enter 0 to Exit");
               puts("");
               printf("Enter your Choice>> ");
               scanf("%d", &option);

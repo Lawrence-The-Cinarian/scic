@@ -47,35 +47,17 @@ float dinvt(float degrees) {
   float result = atan(radians) * (180/PI);
 return result;
 }
-#endif
+
 // (2) For finding Angles and Sides of a Triangles
 //     For Sine Rule: a/sin A = b/sin B = c/sin C
 //     For Cosine Rule (a*a) = (b*b) + (c*c) - 2bc cos A
 
 
-
-#ifdef
 float sine_to_find_side(float a, float A, float B) {
 A = A * (PI/180);
 B = B * (PI/180);
 return (a * sin(B)) / sin(A);
-float sine_to_find_side(float b) {
-A = A * (PI/180);
-B = B * (PI/180);
-return (b * sin(B)) / sin(A);
-}
 }
 
-float sine_to_find_angles() {
-
-}
-
-float cosine_to_find_sides() {
-
-}
-
-float cosine_to_find_angles() {
-
-}
 
 #endif

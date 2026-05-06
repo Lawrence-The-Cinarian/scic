@@ -90,7 +90,7 @@ int main() {
                           puts("Please you're strictly advised to follow the Sine Rules when Choosing the Angle");
                           puts("You are to make the Angles match well with the sides for Better Computation and Answer");
                           puts("");
-                          puts("e.g; if Angle A given to you type A, if Angle C is given type C");
+                          puts("e.g; if Angle A is given to you type A, if Angle C is given type C");
                           printf("Enter>> ");
                           scanf(" %c", opt);
                           puts("");
@@ -104,8 +104,8 @@ int main() {
                           scanf("%f", &C);
                           puts("");
                           }
-                          puts("Enter The side you wish to if they are available to you");
-                          puts("e.g; if side a given to you type a, if side c is given type c");
+                          puts("Enter The side you wish to, if they are available to you");
+                          puts("e.g; if side a is given to you type a, if side c is given type c");
                           printf("Enter>> ");
                           scanf(" %c", opt);
                           puts("");
@@ -134,7 +134,7 @@ int main() {
                           puts("Please you're strictly advised to follow the Sine Rules when Choosing the Angle");
                           puts("You are to make the Angles match well with the sides for Better Computation and Answer");
                           puts("");
-                          puts("e.g; if Angle B given to you type B, if Angle C is given type C");
+                          puts("e.g; if Angle B is given to you type B, if Angle C is given type C");
                           printf("Enter>> ");
                           scanf(" %c", opt);
                           puts("");
@@ -148,9 +148,9 @@ int main() {
                           scanf("%f", &C);
                           puts("");
                           }
-                          puts("Enter The side you wish to if they are available to you");
+                          puts("Enter The side you wish to, if they are available to you");
                           puts("");
-                          puts("e.g; if side b given to you type b, if side c is given type c");
+                          puts("e.g; if side b is given to you type b, if side c is given type c");
                           printf("Enter>> ");
                           scanf(" %c", opt);
                           puts("");
@@ -179,7 +179,7 @@ int main() {
                           puts("Please you're strictly advised to follow the Sine Rules when Choosing Angles");
                           puts("You are to make the Angles match well with the sides for Better Computation and Answer");
                           puts("");
-                          puts("e.g; if Angle A given to you type A, if Angle B is given type B");
+                          puts("e.g; if Angle A is given to you type A, if Angle B is given type B");
                           printf("Enter>> ");
                           scanf(" %c", opt);
                           puts("");
@@ -193,8 +193,8 @@ int main() {
                           scanf("%f", &B);
                           puts("");
                           }
-                          puts("Enter The side you wish to if they are available to you");
-                          puts("e.g; if side a given to you type a, if side b is given type b");
+                          puts("Enter The side you wish to, if they are available to you");
+                          puts("e.g; if side a is given to you type a, if side b is given type b");
                           printf("Enter>> ");
                           scanf(" %c", opt);
                           puts("");

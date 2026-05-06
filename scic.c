@@ -5,10 +5,10 @@
 int main() {
 
   char opt[6] = {'a', 'b', 'c', 'A', 'B', 'C'};
-  int length = sizeof(opt) / sizeof(opt[6]);
-  float a, b, c, A, B, C;
-  int operand, option;
+  double a, b, c, A, B, C;
   double answer, question;
+  int length = sizeof(opt) / sizeof(opt[6]);
+  int operand, option;
 
     for (;;) {
         puts("Cinari's Scientific Calculator");
@@ -84,7 +84,7 @@ int main() {
                           switch(option) {
                           case 1:
                           printf("Enter Angle B>> ");
-                          scanf("%f", &B);
+                          scanf("%lf", &B);
                           puts("");
                           puts("You are to choose one angle for the calculation,");
                           puts("Please you're strictly advised to follow the Sine Rules when Choosing the Angle");
@@ -96,12 +96,12 @@ int main() {
                           puts("");
                           if(opt[0] == 'A') {
                           printf("Enter Angle A>> ");
-                          scanf("%f", &A);
+                          scanf("%lf", &A);
                           puts("");
                           }
                           else if(opt[0] == 'C') {
                           printf("Enter Angle C>> ");
-                          scanf("%f", &C);
+                          scanf("%lf", &C);
                           puts("");
                           }
                           puts("Enter The side you wish to, if they are available to you");
@@ -111,12 +111,12 @@ int main() {
                           puts("");
                                 if(opt[0] == 'a') {
                                 printf("Enter side a>> ");
-                                scanf("%f", &a);
+                                scanf("%lf", &a);
                                 puts("");
                                 }
                                 else if(opt [0] == 'c') {
                                 printf("Enter side c>> ");
-                                scanf("%f", &c);
+                                scanf("%lf", &c);
                                 puts("");
                                 }
                                 else {
@@ -124,11 +124,12 @@ int main() {
                                 return option;
                                 }
                                 answer = sine_to_find_side(a, A, B);  /* a serves as variable for side a and side c; A = it also serves as variable for Angle A and Angle C; Angle B is need to find side c so its seen as b constant*/
+                                 printf("Answer of side b >> %.3f\n", answer);
                                 break;
 
                           case 2:
                           printf("Enter Angle A>> ");
-                          scanf("%f", &A);
+                          scanf("%lf", &A);
                           puts("");
                           puts("You are to choose one angle for the calculation,");
                           puts("Please you're strictly advised to follow the Sine Rules when Choosing the Angle");
@@ -140,12 +141,12 @@ int main() {
                           puts("");
                           if(opt[0] == 'B') {
                           printf("Enter Angle B>> ");
-                          scanf("%f", &B);
+                          scanf("%lf", &B);
                           puts("");
                           }
                           else if(opt[0] == 'C') {
                           printf("Enter Angle C>> ");
-                          scanf("%f", &C);
+                          scanf("%lf", &C);
                           puts("");
                           }
                           puts("Enter The side you wish to, if they are available to you");
@@ -156,12 +157,12 @@ int main() {
                           puts("");
                                 if(opt[0] == 'b') {
                                 printf("Enter side b>> ");
-                                scanf("%f", &b);
+                                scanf("%lf", &b);
                                 puts("");
                                 }
                                 else if(opt [0] == 'c') {
                                 printf("Enter side c>> ");
-                                scanf("%f", &c);
+                                scanf("%lf", &c);
                                 puts("");
                                 }
                                 else {
@@ -169,11 +170,12 @@ int main() {
                                 return option;
                                 }
                                 answer = sine_to_find_side(b, B, A); /*b serves as side b and side c; B also serves as Angle B and Angle C; Angle A is need to find side a so its seen as a constant*/
+                                printf("Answer of side a >> %.3f\n", answer);
                                 break;
 
                           case 3:
                           printf("Enter Angle C>> ");
-                          scanf("%f", &C);
+                          scanf("%lf", &C);
                           puts("");
                           puts("You are to choose two angles for the calculation,");
                           puts("Please you're strictly advised to follow the Sine Rules when Choosing Angles");
@@ -185,12 +187,12 @@ int main() {
                           puts("");
                           if(opt[0] == 'A') {
                           printf("Enter Angle A>> ");
-                          scanf("%f", &A);
+                          scanf("%lf", &A);
                           puts("");
                           }
                           else if(opt[0] == 'B') {
                           printf("Enter Angle B>> ");
-                          scanf("%f", &B);
+                          scanf("%lf", &B);
                           puts("");
                           }
                           puts("Enter The side you wish to, if they are available to you");
@@ -200,12 +202,12 @@ int main() {
                           puts("");
                                 if(opt[0] == 'a') {
                                 printf("Enter side a>> ");
-                                scanf("%f", &a);
+                                scanf("%lf", &a);
                                 puts("");
                                 }
                                 else if(opt [0] == 'b') {
                                 printf("Enter side b>> ");
-                                scanf("%f", &b);
+                                scanf("%lf", &b);
                                 puts("");
                                 }
 
@@ -214,12 +216,9 @@ int main() {
                                 return option;
                                 }
                                 answer = sine_to_find_side(a, A, C); /*a serves as side a and side b; A also serves as Angle A and Angle B; Angle C is need to find side c so its seen as a constant*/
+                                printf("Answer of side c >> %.3f\n", answer);
                                 break;
                           }
-                          for(int i = 0; i < length; i++) {
-                          printf("Answer of side %c >> %.3f\n", opt[i], answer);
-                          puts("");
-                 }
 
              }
 

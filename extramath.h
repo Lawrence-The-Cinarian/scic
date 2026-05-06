@@ -11,45 +11,45 @@
  */
 
 // (1) For finding Sine, Cosine, Tangent, Inverse Sine, Inverse Cosine, and Inverse Tangent
-float disin(float degrees) {
-  float radians = degrees * (M_PI/180);
-  float result = sin(radians);
+double disin(double degrees) {
+  double radians = degrees * (M_PI/180);
+  double result = sin(radians);
 return result;
 }
 
-float dicos(float degrees) {
-  float radians = degrees * (M_PI/180);
-  float result = cos(radians);
+double dicos(double degrees) {
+  double radians = degrees * (M_PI/180);
+  double result = cos(radians);
 return result;
 }
 
-float ditan(float degrees) {
-  float radians = degrees * (M_PI/180);
-  float result = tan(radians);
+double ditan(double degrees) {
+  double radians = degrees * (M_PI/180);
+  double result = tan(radians);
 return result;
 }
 
-float dinvs(float decimal_sine_number) {
-  float result = asin(decimal_sine_number) * (180/M_PI);
+double dinvs(double decimal_sine_number) {
+  double result = asin(decimal_sine_number) * (180/M_PI);
 return result;
 }
 
-float dinvc(float decimal_cosine_number) {
-  float result = acos(decimal_cosine_number) * (180/M_PI);
+double dinvc(double decimal_cosine_number) {
+  double result = acos(decimal_cosine_number) * (180/M_PI);
 return result;
 }
 
-float dinvt(float decimal_tangent_number) {
-  float result = atan(decimal_tangent_number) * (180/M_PI);
+double dinvt(double decimal_tangent_number) {
+  double result = atan(decimal_tangent_number) * (180/M_PI);
 return result;
 }
 
-// (2) For finding Angles and Sides of a Triangles
-//     For Sine Rule: a/sin A = b/sin B = c/sin C
-//     For Cosine Rule (a*a) = (b*b) + (c*c) - 2bc cos A
+/* (2) For finding Angles and Sides of a Triangles
+ *     For Sine Rule: a/sin A = b/sin B = c/sin C
+ *     For Cosine Rule (a*a) = (b*b) + (c*c) - 2bc cos A
+ */
 
-
-float sine_to_find_side(float first_side, float first_angle, float unknown_side_of_angle) {
+double sine_to_find_side(double first_side, double first_angle, double unknown_side_of_angle) {
 first_angle = first_angle * (M_PI/180);
 unknown_side_of_angle = unknown_side_of_angle * (M_PI/180);
 return (first_side * sin(unknown_side_of_angle)) / sin(first_angle);

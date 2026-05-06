@@ -123,7 +123,7 @@ int main() {
                                 break;
                                 return option;
                                 }
-                                answer = sine_to_find_side(a, A, B);
+                                answer = sine_to_find_side(a, A, B);  /* a serves as variable for side a and side c; A = it also serves as variable for Angle A and Angle C; Angle B is need to find side c so its seen as b constant*/
                                 break;
 
                           case 2:
@@ -139,7 +139,7 @@ int main() {
                           scanf(" %c", opt);
                           puts("");
                           if(opt[0] == 'B') {
-                          printf("Enter Angle A>> ");
+                          printf("Enter Angle B>> ");
                           scanf("%f", &B);
                           puts("");
                           }
@@ -155,8 +155,8 @@ int main() {
                           scanf(" %c", opt);
                           puts("");
                                 if(opt[0] == 'b') {
-                                printf("Enter side a>> ");
-                                scanf("%f", &a);
+                                printf("Enter side b>> ");
+                                scanf("%f", &b);
                                 puts("");
                                 }
                                 else if(opt [0] == 'c') {
@@ -168,7 +168,7 @@ int main() {
                                 break;
                                 return option;
                                 }
-                                answer = sine_to_find_side(a, A, B);
+                                answer = sine_to_find_side(b, B, A); /*b serves as side b and side c; B also serves as Angle B and Angle C; Angle A is need to find side a so its seen as a constant*/
                                 break;
 
                           case 3:
@@ -189,7 +189,7 @@ int main() {
                           puts("");
                           }
                           else if(opt[0] == 'B') {
-                          printf("Enter Angle C>> ");
+                          printf("Enter Angle B>> ");
                           scanf("%f", &B);
                           puts("");
                           }
@@ -204,8 +204,8 @@ int main() {
                                 puts("");
                                 }
                                 else if(opt [0] == 'b') {
-                                printf("Enter side c>> ");
-                                scanf("%f", &c);
+                                printf("Enter side b>> ");
+                                scanf("%f", &b);
                                 puts("");
                                 }
 
@@ -213,7 +213,7 @@ int main() {
                                 break;
                                 return option;
                                 }
-                                answer = sine_to_find_side(a, A, B);
+                                answer = sine_to_find_side(a, A, C); /*a serves as side a and side b; A also serves as Angle A and Angle B; Angle C is need to find side c so its seen as a constant*/
                                 break;
                           }
                           for(int i = 0; i < length; i++) {

@@ -49,11 +49,10 @@ return result;
 //     For Cosine Rule (a*a) = (b*b) + (c*c) - 2bc cos A
 
 
-float sine_to_find_side(float a, float A, float B) {
-A = A * (M_PI/180);
-B = B * (M_PI/180);
-return (a * sin(B)) / sin(A);
+float sine_to_find_side(float first_side, float first_angle, float unknown_side_of_angle) {
+first_angle = first_angle * (M_PI/180);
+unknown_side_of_angle = unknown_side_of_angle * (M_PI/180);
+return (first_side * sin(unknown_side_of_angle)) / sin(first_angle);
 }
-
 
 #endif

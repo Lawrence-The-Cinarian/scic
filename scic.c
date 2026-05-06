@@ -218,6 +218,7 @@ int main() {
                           }
                           for(int i = 0; i < length; i++) {
                           printf("Answer of side %c >> %.3f\n", opt[i], answer);
+                          puts("");
                  }
 
              }

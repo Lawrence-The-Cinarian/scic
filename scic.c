@@ -26,7 +26,7 @@ int main() {
                             puts("(6) Tangent Inverse");
                             printf("Enter your Choice>> ");
                             scanf("%d", &option);
-                            printf("Enter the the Number in Degrees>> ");
+                            printf("Enter the Number>> ");
                             scanf("%lf", &question);
 
 
@@ -182,7 +182,7 @@ int main() {
                                                         answer = sine_to_find_side(a, A, B);
                                                         break;
                                               }
-                                              for(int i = 0; i < 1; i++) {
+                                              for(int i = 0; i = opt[6]; i++) {
                                               printf("Answer of side %c >> %.3f\n", opt[i], answer);
                                         }
 
